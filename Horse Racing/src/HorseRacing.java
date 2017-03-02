@@ -186,9 +186,9 @@ public class HorseRacing {
 
 	private static void race(int[][] horsesInRace, String[] horses, int num, int players, int[][] playerBets) { 
 		// continues until a "horse" reaches the end of the "track"
-		while (horsesInRace[1][0] <= 100 && horsesInRace[1][1] <= 100 && horsesInRace[1][2] <= 100
-				&& horsesInRace[1][3] <= 100 && horsesInRace[1][5] <= 100 && horsesInRace[1][6] <= 100
-				&& horsesInRace[1][7] <= 100) {
+		while (horsesInRace[1][0] < 100 && horsesInRace[1][1] < 100 && horsesInRace[1][2] < 100
+				&& horsesInRace[1][3] < 100 && horsesInRace[1][5] < 100 && horsesInRace[1][6] < 100
+				&& horsesInRace[1][7] < 100) {
 			System.out.println(
 					"--------------------|-----------------------------------------------------------------------------------------------------|");
 			for (int i = 0; i < num; i++) {
