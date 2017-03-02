@@ -155,7 +155,7 @@ public class HorseRacing {
 						playerNames[players[i]] + ", please select the number of the horse you would like to bet on: ");
 				playerBets[0][i] = Integer.parseInt(keyboard.nextLine());
 
-				while (!(playerBets[0][i] > 0 && playerBets[0][i] < num)) {
+				while (!(playerBets[0][i] >= 0 && playerBets[0][i] < num)) {
 					System.out.print("Please select the number of the horse you would like to bet on: ");
 					playerBets[0][i] = Integer.parseInt(keyboard.nextLine());
 				}
@@ -164,7 +164,7 @@ public class HorseRacing {
 						+ +playerWallets[players[i]] + ")? ");
 				playerBets[1][i] = Integer.parseInt(keyboard.nextLine());
 
-				while (!(playerBets[1][i] > 0 && playerBets[1][i] < playerWallets[i])
+				while (!(playerBets[1][i] >= 0 && playerBets[1][i] <= playerWallets[i])
 						|| playerBets[1][i] >= playerWallets[i]) {
 					System.out.print("Please enter the number amount that you would like to bet (you have "
 							+ +playerWallets[players[i]] + "): ");
